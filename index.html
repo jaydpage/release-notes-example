@@ -12,7 +12,11 @@
         fetch('releasenotes.md')
             .then(response => response.text())
             .then(text => {
-                document.getElementById('content').innerHTML = marked(text);
+                document.getElementById('content').innerHTML = marked.parse(text);
+            })
+            .catch(error => {
+                console.error('Error fetching the markdown file:', error);
+                document.getElementById('content').innerHTML = '<p>Error loading content.</p>';
             });
     </script>
 </body>
