@@ -1,4 +1,4 @@
-## Version 2.9.3.2
+### Version 2.9.3.2
 Date: 4th September 2024
 
 #### New Features:
@@ -16,7 +16,7 @@ Date: 4th September 2024
 - Fixed: When exporting panels to DXF, grooving parameters (offset, width, depth, length) in decimals are rounded to the next whole number
 - Fixed: "The given key was not present in the dictionary"
 
-## Version 2.9.3.1
+### Version 2.9.3.1
 Date: 8th August 2024
 
 #### Fixes:
@@ -24,7 +24,7 @@ Date: 8th August 2024
 - Fixed: Sheet Trim showing measurements in mm when Imperial Measurement is selected (see below)
 
 
-## Version 2.9.3.0
+### Version 2.9.3.0
 
 Date: 7th August 2024
 
