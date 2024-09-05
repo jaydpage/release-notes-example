@@ -22,8 +22,8 @@ jobs:
           node-version: '16'
 
       - name: Install dependencies
-        run: npm install jsdom node-fetch @mozilla/readability puppeteer
-
+        run: npm install
+        
       - name: Run script
         run: node parse-release-notes.js
 
