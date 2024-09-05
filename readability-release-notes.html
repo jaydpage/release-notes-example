@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readability Example</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sergoui&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Sergoui', sans-serif;
+            font-size: 14px; /* Adjust the font size as needed */
+        }
+    </style>
+</head>
+<body>
+    <div id="content"></div>
+    <script type="module">
+        import { Readability } from 'https://cdn.skypack.dev/@mozilla/readability';
+
+        async function fetchAndParse(url) {
+            try {
+                const proxyUrl = 'https://api.allorigins.win/get?url=';
+                const response = await fetch(proxyUrl + encodeURIComponent(url));
+                const data = await response.json();
+                console.log(data.contents)
+                const doc = new DOMParser().parseFromString(data.contents, 'text/html');
+                const reader = new Readability(doc);
+                const article = reader.parse();
+                document.getElementById('content').innerHTML = article.content;
+            } catch (error) {
+                console.error('Error fetching the webpage:', error);
+                document.getElementById('content').innerHTML = '<p>Error loading content.</p>';
+            }
+        }
+
+        fetchAndParse('https://support.maxcutsoftware.com/hc/en-us/articles/360016474633-MaxCut-Version-2-Release-History');
+    </script>
+</body>
+</html>
