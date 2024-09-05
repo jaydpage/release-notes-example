@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
-<!-- saved from url=(0076)file:///C:/_Systems/POC/release-notes-example/readability-release-notes.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Readability Example</title>
-    <link href="./index_files/css2" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sergoui&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Sergoui', sans-serif;
@@ -12,8 +13,7 @@
         }
     </style>
 </head>
-<body>
-    <div id="content"><div id="readability-page-1" class="page"><div>
+<body><div id="readability-page-1" class="page"><div>
       <h2 id="01J4S5FJ4EWCZMVKXYERY449ER">Version 2.9.3.2<br>Date: 4th September 2024</h2>
 <p><strong><span>New Features:</span></strong></p>
 <ul>
@@ -34,7 +34,7 @@
 <ul>
 <li>Fixed: Sheet Trim showing measurements in mm when Imperial Measurement is selected (see below)</li>
 </ul>
-<p><img src="file:///C:/hc/article_attachments/15320312015260"></p>
+<p><img src="https://support.maxcutsoftware.com/hc/article_attachments/15320312015260"></p>
 <h2 id="01J6XY2FNSR0NGSH5W3RDCH79C">Version 2.9.3.0<br>Date: 7th August 2024</h2>
 <p><strong><span>Updates:</span></strong></p>
 <ul>
@@ -176,7 +176,7 @@
 <li>Updated language translations</li>
 <li>MaxCut's code signing certificate has been updated. This may result in a browser and/or Windows Defender SmartScreen pop-up for some users (see below image). The download and installer is trusted and can be bypassed by clicking on 'More Info' and 'Run Anyway'</li>
 </ul>
-<p><img src="file:///C:/hc/article_attachments/12633234966428" alt="Windows SmartScreen.gif" width="400" height="400"></p>
+<p><img src="https://support.maxcutsoftware.com/hc/article_attachments/12633234966428" alt="Windows SmartScreen.gif" width="400" height="400"></p>
 <p id="01HCYN4P7AJ10K12SPMXH75X7H"><span><strong>Fixes:</strong></span></p>
 <div>
 <ul>
@@ -547,27 +547,4 @@
 <p>&nbsp;New Features:&nbsp;<br>- <a href="https://support.maxcutsoftware.com/hc/en-us/community/posts/360007661419-New-Feature-Export-Layout-support-for-Ardis" target="_self">Add experimental Ardis machine export</a>&nbsp;<br>- <a href="https://support.maxcutsoftware.com/hc/en-us/community/posts/360007661399-New-Feature-Danish-Language-included-with-community-support-for-translations" target="_self">Add Danish language</a></p>
 <p dir="auto">Updates:&nbsp;<br>- Simplify license activation screen&nbsp;<br>- Fix several German translations&nbsp;<br>- Update translations for most supported languages</p>
 <p dir="auto">Fixes:&nbsp;<br>- Fix Cix machine format to only be exportable in the Business Edition</p>
-    </div></div></div>
-    <script type="module">
-        import { Readability } from 'https://cdn.skypack.dev/@mozilla/readability';
-
-        async function fetchAndParse(url) {
-            try {
-                const proxyUrl = 'https://api.allorigins.win/get?url=';
-                const response = await fetch(proxyUrl + encodeURIComponent(url));
-                const data = await response.json();
-                console.log(data.contents)
-                const doc = new DOMParser().parseFromString(data.contents, 'text/html');
-                const reader = new Readability(doc);
-                const article = reader.parse();
-                document.getElementById('content').innerHTML = article.content;
-            } catch (error) {
-                console.error('Error fetching the webpage:', error);
-                document.getElementById('content').innerHTML = '<p>Error loading content.</p>';
-            }
-        }
-
-        fetchAndParse('https://support.maxcutsoftware.com/hc/en-us/articles/360016474633-MaxCut-Version-2-Release-History');
-    </script>
-
-</body></html>
+    </div></div></body></html>

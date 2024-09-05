@@ -22,8 +22,12 @@
                 const proxyUrl = 'https://api.allorigins.win/get?url=';
                 const response = await fetch(proxyUrl + encodeURIComponent(url));
                 const data = await response.json();
-                console.log(data.contents)
-                const doc = new DOMParser().parseFromString(data.contents, 'text/html');
+                let htmlContent = data.contents;
+
+                const baseUrl = new URL(url);
+                htmlContent = htmlContent.replace(/src="\/([^"]+)"/g, `src="${baseUrl.origin}/$1"`);
+
+                const doc = new DOMParser().parseFromString(htmlContent, 'text/html');
                 const reader = new Readability(doc);
                 const article = reader.parse();
                 document.getElementById('content').innerHTML = article.content;
