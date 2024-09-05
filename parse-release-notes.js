@@ -39,6 +39,10 @@ async function fetchAndParse(url) {
             font-family: 'Sergoui', sans-serif;
             font-size: 14px; /* Adjust the font size as needed */
         }
+        img {
+            max-width: 500px;
+            height: auto;
+        }
     </style>
 </head>
 <body>`;
