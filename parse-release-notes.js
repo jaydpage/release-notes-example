@@ -21,6 +21,7 @@ async function fetchAndParse(url) {
 
         const baseUrl = new URL(url);
         htmlContent = htmlContent.replace(/src="\/([^"]+)"/g, `src="${baseUrl.origin}/$1"`);
+        htmlContent = htmlContent.replace(/<h2\b[^>]*>/g, '<h3>').replace(/<\/h2>/g, '</h3>');
 
         const dom = new JSDOM(htmlContent);
         const reader = new Readability(dom.window.document);
