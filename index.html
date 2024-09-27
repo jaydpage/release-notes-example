@@ -18,14 +18,46 @@
     </style>
 </head>
 <body><div id="readability-page-1" class="page"><div>
-      <h3>Version 2.9.3.3<br>Date: 17th September 2024</h3>
+      <h3>Version 2.9.3.4<br>Date: 25th September 2024</h3>
+<p><span><strong>New Features</strong></span></p>
+<div data-component="TitleArea" data-size-variant="medium" role="region" aria-label="Header" data-testid="issue-header">
+<ul>
+<li id="h_01J8FHQT21N4M32PQW6PCFB16A">Auto-Upgrade Dialog Added to MaxCut<p>With the new Auto-Upgrade feature, MaxCut will notify you whenever a new version is released. A dialog box will appear, offering the following options:</p></li>
+</ul>
+<ul>
+<li>
+<ul>
+<li>
+<strong>Skip Update</strong>: This will close the dialog, and it will only notify you again when the next version is available.</li>
+<li>
+<strong>Remind Me Later</strong>: You can choose when you’d like to be reminded about the update.</li>
+<li>
+<strong>Update Now</strong>: This will automatically download and install the latest version of MaxCut while keeping all of your data intact.</li>
+</ul>
+</li>
+</ul>
+<p>This new feature ensures you always have the latest features and fixes at your convenience!</p>
+<ul>
+<li>A new column called "Size on Sheet" has been added to the Input Items screen, reflecting the panel size based on edging thickness and expansions.</li>
+</ul>
+<p id="h_01J8FHFBBRQMTHSFT71CG78EM5"><span><strong>Updates</strong></span></p>
+<ul>
+<li>Added a "View" option to the Input Items Drop Down List for easier item selection.</li>
+<li>Increased the size of the Mass Changes dialog to align with other dialogs in the software.</li>
+</ul>
+<p id="h_01J8FHFBBRZ4BANEQ7ME92VPJ5"><span><strong>Fixes</strong></span></p>
+<ul>
+<li>The Input Items Group report now accurately reflects unique items, even when they share the same name.</li>
+<li>When opening the Material Selector dialog, it will always default to the current material for easier identification.</li>
+<li>The panel rotation column is now displayed on the Input Items screen for enhanced visibility.</li>
+</ul>
+</div>
+<h3>Version 2.9.3.3<br>Date: 17th September 2024</h3>
 <p><strong><span>Fixes:</span></strong></p>
 <ul>
-<li>Fixed: Grooves appear incorrectly on panels that are rotated</li>
-<li>Fixed: When exporting holes and grooving in inches, the export produces a result that cannot be imported</li>
-<li>Fixed: When the symbol (cm, mm, ft, in, etc.) is missing from holes and grooving measurements, MaxCut does not correctly identify the measurement<br>
-
-</li>
+<li>Grooves now appear correctly on rotated panels.</li>
+<li>Exporting panels with holes and grooving in inches now produces results that can be imported successfully.</li>
+<li>MaxCut now correctly identifies measurements when the symbol (cm, mm, etc.) is missing from holes and grooving measurements.</li>
 </ul>
 <h3>Version 2.9.3.2<br>Date: 4th September 2024</h3>
 <p><strong><span>New Features:</span></strong></p>
@@ -38,14 +70,20 @@
 </ul>
 <p><strong><span>Fixes:</span></strong></p>
 <ul>
-<li>Fixed: When exporting panels to DXF, grooves do not show width</li>
-<li>Fixed: When exporting panels to DXF, grooving parameters (offset, width, depth, length) in decimals are rounded to the next whole number</li>
-<li>Fixed: "The given key was not present in the dictionary"</li>
+<li>
+<p>Improved DXF exports: Grooves now display the correct width when exporting panels to DXF.</p>
+</li>
+<li>
+<p>Enhanced precision: Grooving parameters (offset, width, depth, length) now retain decimal values when exporting panels to DXF.</p>
+</li>
+<li>
+<p>Resolved issue: 'The given key was not present in the dictionary' error no longer occurs when the loading indicator and the missing materials dialog are displayed at the same time.</p>
+</li>
 </ul>
 <h3>Version 2.9.3.1<br>Date: 8th August 2024</h3>
 <p><strong><span>Fixes:</span></strong></p>
 <ul>
-<li>Fixed: Sheet Trim showing measurements in mm when Imperial Measurement is selected (see below)</li>
+<li>Enhanced measurement consistency: Sheet Trim now correctly displays in Imperial units when selected, ensuring accurate measurements.</li>
 </ul>
 <p><img src="https://support.maxcutsoftware.com/hc/article_attachments/15320312015260"></p>
 <h3>Version 2.9.3.0<br>Date: 7th August 2024</h3>
@@ -72,7 +110,7 @@
 </ul>
 <p><strong><span>Fixes:</span></strong></p>
 <ul>
-<li>Fixed: Material Panel quantities not adding up to Total Panels in Job Summary report when there are multiple occurrences of the same material</li>
+<li>Improved accuracy in the Job Summary report: Material Panel quantities now correctly reflect the Total Panels when the same material appears multiple times</li>
 </ul>
 <h3>Version 2.9.2.9<br>Date: 29th July 2024</h3>
 <p><strong><span>Fixes:</span></strong></p>
