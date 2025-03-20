@@ -17,14 +17,76 @@
         }
     </style>
 </head>
-<body><div id="readability-page-1" class="page"><div><h3>Version 2.9.4.4<br>Date: 26th February 2025</h3>
+<body><div id="readability-page-1" class="page"><div><h3>Version 2.9.4.5<br>Date: 19th March 2025</h3>
 <h3 id="h_01JJ42VWH86TA3DV4PD740GFWK"><span>New Features</span></h3>
+<ul>
+<li>
+<p data-component="PH_Title" data-hidden="false"><strong data-start="153" data-end="194">Import Input Items from Excel (.xlsx format)</strong> – You can now import input items directly from Excel, making data entry faster and more seamless.</p>
+<ul data-start="297" data-end="461">
+<li data-start="417" data-end="461">Click on the link below to learn more about this feature:<p><a href="/hc/en-us/articles/19050505542684" target="_blank" rel="noopener noreferrer">Understanding the Excel Import Dialog</a></p></li>
+</ul>
+</li>
+</ul>
+<h3 id="01JN1QYB85FZTZ6PD5T55H6JB4"><span>Updates</span></h3>
+<ul>
+<li data-start="481" data-end="777">
+<p data-start="483" data-end="534"><strong data-start="483" data-end="532">Improved Panel Selection in Optimization View</strong></p>
+<ul data-start="537" data-end="777">
+<li data-start="537" data-end="650">
+<strong data-start="539" data-end="557">Left-clicking</strong> on the expanded part of a panel now also selects the panel.</li>
+<li data-start="653" data-end="777">
+<strong data-start="655" data-end="672">Right-clicking</strong> on the expanded part of a panel now brings up the same context menu as clicking directly on the panel.</li>
+</ul>
+</li>
+<li data-start="779" data-end="1427">
+<p data-start="781" data-end="837"><strong data-start="781" data-end="835">Enhanced KD Max Import Handling for Panel Thickness</strong></p>
+<ul data-start="840" data-end="1427">
+<li data-start="840" data-end="1201">To reduce errors when selecting a material during import, MaxCut now:
+<ol data-start="949" data-end="1201">
+<li data-start="949" data-end="1027">Attempts to find a material that matches the <strong data-start="1007" data-end="1024">material name </strong>(from the import).</li>
+<li data-start="1032" data-end="1122">If no exact match is found, it looks for a material matching <strong data-start="1096" data-end="1119">name - thickness mm</strong>.</li>
+<li data-start="1127" data-end="1201">If there is still no match, the user will be prompted to select a replacement.<br><strong data-start="1206" data-end="1233"><br>Example:</strong>
+<ul data-start="1240" data-end="1427">
+<li data-start="1240" data-end="1282">
+<strong data-start="1242" data-end="1260">Imported Name:</strong> White Example Board</li>
+<li data-start="1287" data-end="1320">
+<strong data-start="1289" data-end="1312">Imported Thickness:</strong> 18 mm</li>
+<li data-start="1325" data-end="1427">
+<strong data-start="1327" data-end="1357">MaxCut will match against:</strong>
+<ul data-start="1366" data-end="1427">
+<li data-start="1366" data-end="1389">White Example Board</li>
+<li data-start="1396" data-end="1427">White Example Board - 18 mm</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<strong>Smoother Downgrade Experience to Community Edition</strong>
+<ul data-start="1534" data-end="1863">
+<li data-start="1534" data-end="1662">If your MaxCut downgrades from Business Edition to Community Edition (for whatever reason), we've improved the process to make it easier to get back up and running.</li>
+<li data-start="1665" data-end="1863">A clearer <strong data-start="1677" data-end="1691">dialog box</strong> now guides you through the steps:
+<ul data-start="1732" data-end="1863">
+<li data-start="1732" data-end="1795">
+<strong data-start="1734" data-end="1745">Step 1:</strong> Reactivate your subscription (<strong data-start="1776" data-end="1792">Green button</strong>)</li>
+<li data-start="1800" data-end="1863">
+<strong data-start="1802" data-end="1813">Step 2:</strong> Check your subscription status (<strong data-start="1846" data-end="1860">New button</strong>)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>Version 2.9.4.4<br>Date: 26th February 2025</h3>
+<h3 id="01JPPT60RKEWRJG9X0VQHZJ4A1"><span>New Features</span></h3>
 <ul>
 <li>
 <p id="h_01JN1RKXZBKEW0RRB055SFPXWP" data-component="PH_Title" data-hidden="false"><strong data-start="252" data-end="285">Drag &amp; Drop Files into MaxCut</strong> – Easily add files to your project! Drag a MaxCut job file (mc3) into MaxCut to open it instantly, or drag CSV file to start the import process.</p>
 </li>
 </ul>
-<h3 id="01JN1QYB85FZTZ6PD5T55H6JB4"><span>Updates</span></h3>
+<h3 id="01JPPT60RMTZKXW4EQWVX9HJ12"><span>Updates</span></h3>
 <ul>
 <li>
 <strong data-start="460" data-end="491">Tax for Hardware &amp; Labour Resources</strong> – The <em data-start="498" data-end="509">Apply Tax</em> option has been added to Hardware and Labour resources.</li>
@@ -35,7 +97,7 @@
 <li data-start="936" data-end="1062">
 <strong data-start="938" data-end="966">Refined Setup Experience</strong> – Setup dialogs now have clearer, more informative headings to guide you through the process.</li>
 </ul>
-<h3 id="01JN1QY9916CNQEHJT1301JYQD"><span>Fixes</span></h3>
+<h3 id="01JPPT60RMC0ZXCY7FY97ERPEK"><span>Fixes</span></h3>
 <ul>
 <li>
 <strong data-start="1082" data-end="1111">Accurate Tax Calculations</strong> – Deselecting <em data-start="1126" data-end="1137">Apply Tax</em> on materials and other resources now correctly removes tax from the Summary.</li>
