@@ -17,13 +17,34 @@
         }
     </style>
 </head>
-<body><div id="readability-page-1" class="page"><div><h3>Version 2.9.4.9<br>Date: 12th May 2025</h3>
+<body><div id="readability-page-1" class="page"><div><h3>Version 2.9.5.0<br>Date: 27th May 2025</h3>
 <h3 id="01JR0HSA9TT5N0NXRGBJB88T3A"><span>New Features</span></h3>
+<ul>
+<li data-start="465" data-end="681">
+<strong data-start="685" data-end="730">Added Avery 45008 Label Format</strong><br data-start="408" data-end="411">MaxCut now includes a dedicated label report for the Avery 45008 template—commonly used in the United States and Canada. This format supports 21 labels per US Letter sheet (3 columns × 7 rows), with dimensions of 2 13/16" x 1 1/2" (71.44 × 38.1 mm). It mirrors the layout used in our A4 24-label report, allowing all familiar details to fit comfortably while aligning with North American labeling standards.</li>
+</ul>
+<h3 id="01JR0HS8HRC5DJVZFFVXWTF946"><span>Fixes</span></h3>
+<ul>
+<li data-start="819" data-end="1023">
+<div data-start="821" data-end="1023"><p><strong data-start="821" data-end="846">Crash-Free DXF Export</strong><br data-start="846" data-end="849">Exporting to DXF works without crashing when the last-used save path is unavailable. Exports now fail gracefully with a prompt if the destination path is invalid.</p></div>
+</li>
+<li data-start="1025" data-end="1229">
+<div data-start="1027" data-end="1229"><p><strong data-start="1027" data-end="1059">Mass Change Dialog Stability</strong><br data-start="1059" data-end="1062">Pressing Esc or clicking Cancel inside a Mass Change option now correctly closes only the inner dialog—no more unintentionally closing the entire Mass Change window.</p></div>
+</li>
+<li data-start="1231" data-end="1420">
+<div data-start="1233" data-end="1420"><p><strong data-start="1233" data-end="1275">Batch Print Accuracy for A4 and Letter Labels</strong><br data-start="1275" data-end="1278">Batch print labels on A4 or Letter layouts now consistently display all data across multiple pages, avoiding blank outputs after the first page.</p></div>
+</li>
+<li data-start="1422" data-end="1617">
+<p data-start="1424" data-end="1617"><strong data-start="1424" data-end="1458">Job Summary Edging Calculation</strong><br data-start="1458" data-end="1461">The Job Summary report accurately reflects edging quantities from input item edging, ensuring your reports align perfectly with actual project requirements.</p>
+</li>
+</ul>
+<h3>Version 2.9.4.9<br>Date: 12th May 2025</h3>
+<h3 id="01JW8W839G3TH2DS3WQZSTDEPC"><span>New Features</span></h3>
 <ul>
 <li data-start="465" data-end="681">
 <strong data-start="685" data-end="730">Faster Input Item Entry with “Add Another” Option</strong><br data-start="730" data-end="733">Adding multiple input items is now faster and smoother with the new “Add Another” button. This lets you quickly save an item and immediately start the next one—no need to repeat the full add process each time.</li>
 </ul>
-<h3 id="01JTTVZCK8WBAAK4S07D8KNZPE"><span>Updates</span></h3>
+<h3 id="01JW8W839HHCHPEBPJMD8AFAXW"><span>Updates</span></h3>
 <ul>
 <li data-start="965" data-end="1301">
 <div data-start="967" data-end="1301"><p><strong data-start="967" data-end="999">Smarter File Import Handling</strong><br data-start="999" data-end="1002">MaxCut now automatically detects and handles file formats during import—if you choose the import Excel option with a CSV file (or vice versa), MaxCut will detect the correct format. </p></div>
@@ -35,7 +56,7 @@
 <p data-start="1686" data-end="1982"><strong data-start="1686" data-end="1732">Consistent Terminology in CSV/XLSX Exports</strong><br data-start="1732" data-end="1735">CSV and Excel file exports now use the same standardized rotation options as the MaxCut interface—“Never rotate,” “Always allow rotation,” and more—making it easier to prepare and review data without needing to cross-reference terminology.</p>
 </li>
 </ul>
-<h3 id="01JR0HS8HRC5DJVZFFVXWTF946"><span>Fixes</span></h3>
+<h3 id="01JW8W839HP8ZHG7GF4MG6YZQH"><span>Fixes</span></h3>
 <ul>
 <li data-start="2001" data-end="2198">
 <div data-start="2003" data-end="2198"><p><strong data-start="2003" data-end="2033">Reliable License Transfers</strong><br data-start="2033" data-end="2036">Transferring a license to another machine now works reliably.<span> You </span><span>no </span><span>longer </span><span>need </span><span>to </span><span>deactivate </span><span>it </span><span>first—</span><span>simply </span><span>activate </span><span>it </span><span>on </span><span>the </span><span>new </span><span>machine, </span><span>and </span><span>MaxCut </span><span>will </span><span>handle </span><span>the </span><span>move </span><span>for </span><span>you.</span></p></div>
