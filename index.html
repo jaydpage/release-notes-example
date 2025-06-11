@@ -17,13 +17,50 @@
         }
     </style>
 </head>
-<body><div id="readability-page-1" class="page"><div><h3>Version 2.9.5.0<br>Date: 27th May 2025</h3>
+<body><div id="readability-page-1" class="page"><div><h3>Version 2.9.5.1<br>Date: 9th June 2025</h3>
 <h3 id="01JR0HSA9TT5N0NXRGBJB88T3A"><span>New Features</span></h3>
+<ul>
+<li data-start="465" data-end="681">
+<strong data-start="685" data-end="730">Added Avery 5160 Label Format<br data-start="450" data-end="453"></strong>You can now generate labels using the Avery 5160 template—designed for 30 labels per US Letter sheet (3 columns × 10 rows), each label measuring 2 5/8" x 1" (66.7 x 25.4 mm). This format is commonly used in the United States and Canada. It closely matches MaxCut’s existing A4 24-label report, ensuring your key part details and edging visuals remain clear and well-formatted.</li>
+</ul>
+<h3 id="01JR0HS8HRC5DJVZFFVXWTF946"><span>Updates</span></h3>
+<ul>
+<li data-start="698" data-end="891">
+<strong data-start="698" data-end="742">Consistent Ordering for Input Item Types</strong><br data-start="742" data-end="745">The order of input item types now appears consistently across both the Library and Add Prompt interfaces, helping you find what you need faster.</li>
+<li data-start="698" data-end="891">
+<strong data-start="895" data-end="951">Enhanced Edging Visibility on Current Layout Reports</strong><br data-start="951" data-end="954">Edging now appears clearly in layout reports, thanks to an increase in line thickness. This makes the edging much easier to see after printing, ensuring greater accuracy and legibility in your documentation.</li>
+</ul>
+<h3 id="01JXA4DWSEXDEGV7BV11DMNJYS"><span>Fixes</span></h3>
+<ul>
+<li data-start="1197" data-end="1378">
+<strong data-start="1197" data-end="1253">Edging Displayed on Current Layout Report</strong><br data-start="1253" data-end="1256">Panels in the Current Layout report now correctly show edging, ensuring visual accuracy right from the start.</li>
+<li data-start="1197" data-end="1378">
+<strong data-start="1382" data-end="1436">CSV Import: “Don’t Ask Again” Setting Persists</strong><br data-start="1436" data-end="1439">The “Don’t Ask Again” checkbox for CSV imports now reliably retains your preference between MaxCut sessions.</li>
+<li data-start="1197" data-end="1378">
+<strong data-start="1553" data-end="1598">“Add Another” Now Works in Add Prompt Flow</strong><br data-start="1598" data-end="1601">When adding input items via the Add Prompt, the “Add Another” button now correctly reopens the dialog to continue adding items, eliminating unnecessary clicks.</li>
+<li data-start="1197" data-end="1378">
+<strong data-start="1764" data-end="1805">Unified Font Defaults Across Sessions</strong>
+<p data-start="1764" data-end="1887">On-screen font sizes now start with consistent and more practical defaults:</p>
+<ul data-start="1890" data-end="2104">
+<li data-start="1890" data-end="1913">
+<p data-start="1892" data-end="1913">Panel Font Size: 48</p>
+</li>
+<li data-start="1916" data-end="1949">
+<p data-start="1918" data-end="1949">Panel Dimension Font Size: 42</p>
+</li>
+<li data-start="1952" data-end="2104">
+<p data-start="1954" data-end="2104">Panel Sheet Dimension Font Size: 42<br data-start="1989" data-end="1992">These sizes apply both at first launch and when restoring defaults, improving panel readability and label fit.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3>Version 2.9.5.0<br>Date: 27th May 2025</h3>
+<h3 id="01JXA4CZEZTH1RKG94XJZ6Y3K7"><span>New Features</span></h3>
 <ul>
 <li data-start="465" data-end="681">
 <strong data-start="685" data-end="730">Added Avery 45008 Label Format</strong><br data-start="408" data-end="411">MaxCut now includes a dedicated label report for the Avery 45008 template—commonly used in the United States and Canada. This format supports 21 labels per US Letter sheet (3 columns × 7 rows), with dimensions of 2 13/16" x 1 1/2" (71.44 × 38.1 mm). It mirrors the layout used in our A4 24-label report, allowing all familiar details to fit comfortably while aligning with North American labeling standards.</li>
 </ul>
-<h3 id="01JR0HS8HRC5DJVZFFVXWTF946"><span>Fixes</span></h3>
+<h3 id="01JXA4CZF0N59HGRBR07E4JMDN"><span>Fixes</span></h3>
 <ul>
 <li data-start="819" data-end="1023">
 <div data-start="821" data-end="1023"><p><strong data-start="821" data-end="846">Crash-Free DXF Export</strong><br data-start="846" data-end="849">Exporting to DXF works without crashing when the last-used save path is unavailable. Exports now fail gracefully with a prompt if the destination path is invalid.</p></div>
